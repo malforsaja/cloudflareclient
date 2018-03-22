@@ -25,7 +25,12 @@ var getIP_onefirewall = (req, res) => {
       };
 
     function callback(error, response) {
-        res.status(200).json(response)
+        //extract IPs from the response
+        var str = response.body
+        var regexp = /\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b/gi;
+        var ip_list = str.match(regexp);
+        //console.log(matches_array);
+        res.status(200).json(ip_list)
     }
 
     request(options, callback)
