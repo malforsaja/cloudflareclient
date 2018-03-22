@@ -4,10 +4,12 @@ const dotenv = require('dotenv').config()
 var app = express()
 
 var ips = require('./routes/ip_routes')
+var CloudflareIP = require('./ips/class')
 
 app.use('/', ips)
 
-
+var test = new CloudflareIP()
+console.log(test.getIPCloudflare())
 
 /* var cf = require('cloudflare')({
     email: 'malfor.saja@gmail.com',
@@ -26,7 +28,6 @@ app.use('/', ips)
         res.status(200).json(response)
     })
 }) */
-
 
 
 const port = 3000
