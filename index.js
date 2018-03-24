@@ -9,13 +9,8 @@ var CloudflareIP = require('./ips/class')
 app.use('/', ips)
 
 var test = new CloudflareIP()
-console.log(test.getIPCloudflare())
 
-/* var cf = require('cloudflare')({
-    email: 'malfor.saja@gmail.com',
-    key: 'b66001ad605220c35a347572d568da9e9c2d4'
-});
- */
+test.getIPCloudflare()
 
 
 /*cf.zones.read('b66001ad605220c35a347572d568da9e9c2d4').then(function (resp) {

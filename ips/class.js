@@ -7,11 +7,11 @@ var cf = require('cloudflare')({
 class CloudflareIP {
     constructor() { }
 
-    getIPCloudflare(req, res) {
+    getIPCloudflare(req, res) {        
         cf.ips.browse().then((response) => {
             res.status(200).json(response.result.ipv4_cidrs)
         })
     }
 }
 
-module.exports = CloudflareIP;
+module.exports = exportAPI;
