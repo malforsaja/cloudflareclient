@@ -14,4 +14,4 @@ class CloudflareIP {
     }
 }
 
-module.exports = exportAPI;
+module.exports = CloudflareIP;
