@@ -10,7 +10,7 @@ app.use('/', ips)
 
 var test = new CloudflareIP()
 
-test.getIPCloudflare()
+//test.getIPCloudflare()
 
 
 /*cf.zones.read('b66001ad605220c35a347572d568da9e9c2d4').then(function (resp) {
