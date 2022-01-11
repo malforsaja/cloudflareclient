@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/onefirewall/cloudflareclient#readme",
   "dependencies": {
-    "cloudflare": "^2.7.0",
+    "cloudflare": "^2.8.0",
     "dotenv": "^5.0.1",
     "express": "^4.17.2",
     "request": "^2.88.2"
