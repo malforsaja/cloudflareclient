@@ -20,7 +20,7 @@
   "dependencies": {
     "cloudflare": "^2.8.0",
     "dotenv": "^5.0.1",
-    "express": "^4.17.2",
+    "express": "^4.17.3",
     "request": "^2.88.2"
   }
 }
